@@ -814,6 +814,7 @@ typedef struct
     wifi_countrycode_type_t countrySupported[wifi_countrycode_max]; /**< The supported country list. It should return the current country code on the first entry. */
     UINT maxNumberVAPs; /**< Maximum number of VAPs. */
     BOOL mcast2ucastSupported; /**< True if 'multicast to unicast' conversion is supported. */
+    UINT mu_mode;
 } __attribute__((packed)) wifi_radio_capabilities_t;
 
 /**
